@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(197, 94, 94);
+}
+h1 {
+    color: rgb(255, 237, 229);
+    font-size: 45px;
+    font-family: 'Nerko One', cursive;
+}
+#pomodoro, #short, #long {
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    color: rgb(197, 94, 94);
+    background-color: rgb(255, 237, 229);
+    font-size: 20px;
+    margin: 10px;
+    font-family: 'Nerko One', cursive;
+}
+
+#header, #buttons, #pic, #btns, #countdown-container {
+    display: flex;
+    justify-content: center;
+}
+#start, #reset, #pause {
+    background: none;
+    border: none;
+    fill: rgb(255, 237, 229);
+    margin: 20px;
+}
+
+#countdown {
+    font-size: 60px;
+    margin: 0;
+    padding: 10px;
+    color: rgb(255, 237, 229);
+    text-shadow: 3px black;
+    font-family: 'Nerko One', cursive;
+}

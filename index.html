@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pomodoro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:,">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <h1>Tomato timer</h1>
+    </div>
+
+    <div id="buttons">
+        <button id="pomodoro">pomodoro</button>
+        <button id="short">short break</button>
+        <button id="long">long break</button>
+    </div>
+    <div id="pic">
+        <img id ='image' src="https://cdn.glitch.global/9af89f45-29c6-43a3-a0cb-e450d9fbcc77/tomato-cartoon-1.svg?v=1669576632248" alt="tomato" width="300px">
+    </div>
+
+    <div id="countdown-container">
+        <p id="countdown"></p>
+    </div>
+   <div id="btns">
+    <button id="reset"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+        <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
+        <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
+      </svg></button>
+    <button id="start"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="" class="bi bi-play" viewBox="0 0 16 16">
+        <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+      </svg></button>
+    <button id="pause"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="" class="bi bi-pause" viewBox="0 0 16 16">
+        <path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z"/>
+      </svg></button>
+   </div>
+    
+
+    <!-- <audio id="player" autoplay loop>
+        <source src="https://cdn.glitch.com/eeaf6ebc-3ee8-45cf-aa54-1394e24c3353%2FTunePocket-Soft-Ocean-Waves-Meditation-5-Breaths-Per-Min-5-Min-Preview.mp3?v=1628649760087" type="audio/mp3">
+        </audio>
+
+    <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline id="myVideo">
+        <source src="https://cdn.glitch.com/eeaf6ebc-3ee8-45cf-aa54-1394e24c3353%2Fwaves.mp4?v=1628649682755" type="video/mp4">
+        </video> -->
+
+        <script src="script.js"></script>
+</body>
+</html>
