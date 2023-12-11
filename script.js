@@ -109,7 +109,7 @@ start.addEventListener('click', startTimer);
 function stopTimer(){
     clearInterval(timerId);
     timerObject.state = 'stopped';
-    timerObject.lastUpdate = Dtae.now();
+    timerObject.lastUpdate = Date.now();
     saveTimerState();
 }
     
