@@ -131,5 +131,70 @@ reset.addEventListener('click', function(){
 })   
     
     
+// animation
+
+gsap.fromTo('#image', 
+    { scale: 0, opacity: 0 }, 
+    {
+        scale: 1, 
+        opacity: 1, 
+        duration: 1, 
+        ease: "elastic.out(1, 0.3)", 
+        onComplete: function() {
+           
+            gsap.to('#image', {
+                scale: 1.05, 
+                repeat: -1, 
+                yoyo: true,
+                duration: 1.5, 
+                ease: "power1.inOut" 
+            });
+        }
+    }
+);
+window.onload = function() {
+    gsap.from('#header', {
+        duration: 1,
+        opacity: 0,
+        y: -50,
+        ease: 'power3.out'
+    });
+
+    gsap.from('#buttons button', {
+        duration: 1,
+        opacity: 0,
+        y: 50,
+        stagger: 0.2,
+        ease: 'power3.out',
+        delay: 0.5
+    });
+
+    gsap.from('#pic', {
+        duration: 1,
+        opacity: 0,
+        scale: 0.5,
+        ease: 'power3.out',
+        delay: 1.2
+    });
+
+    gsap.from('#countdown-container', {
+        duration: 1,
+        opacity: 0,
+        x: -100,
+        ease: 'power3.out',
+        delay: 1.4
+    });
+
+    gsap.from('#btns button', {
+        duration: 1,
+        opacity: 0,
+        y: 50,
+        stagger: 0.1,
+        ease: 'power3.out',
+        delay: 1.6
+    });
+}
+
+
 
 
